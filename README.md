@@ -2,4 +2,14 @@
 
 ### Question 1
 
-<p>I have taken 1 more arrgument in createAccount and deleteAccount which is the Account LinkedList</p>
+<p>
+    <h2>defined a struct AccountInfo with following parameters:</h2><br>
+    -integer num<br>
+    -AccountType (enum) <br>
+    -char array<br>
+    -float <br>
+</p>
+
+### Question 2
+
+<p>
