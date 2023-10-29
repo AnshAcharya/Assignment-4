@@ -2,4 +2,4 @@
 
 ### Question 1
 
-<p>Ihave taken 1 more arrgument in createAccount and deleteAccount which is the Account LinkedList</p>
+<p>I have taken 1 more arrgument in createAccount and deleteAccount which is the Account LinkedList</p>
