@@ -1,9 +1,9 @@
 # Assignment-4
 
-### Question 1
+# Question 1
 
 <p>
-    <h2>defined a struct AccountInfo with following parameters:</h2><br>
+    <b>defined a struct AccountInfo with following parameters:</b><br>
     -integer num<br>
     -AccountType (enum) <br>
     -char array<br>
