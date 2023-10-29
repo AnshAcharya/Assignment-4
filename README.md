@@ -61,4 +61,76 @@
 
 - The `last` variable is used to keep track of the last assigned account number and is initialized to 100.
 
+# Question 2
+
+## Structures and Enums
+
+### `operation` (Enum)
+
+- This enum defines the mathematical operations that can be performed on complex numbers.
+- Enum Values:
+  - `ADD` (with a value of 1)
+  - `SUB` (with a value of 2)
+  - `COSINE` (with a value of 3)
+  - `DOT` (with a value of 4)
+
+### `num` (Struct)
+
+- This struct represents a node in the linked list, containing a floating-point number and a pointer to the next node.
+- Members:
+  - `float x`: Floating-point value
+  - `struct num *next`: Pointer to the next node in the linked list
+
+## Functions
+
+### `add(int n, LinkedList num1, LinkedList num2)`
+
+- This function performs element-wise addition of two linked lists of floating-point numbers.
+- It returns a new linked list containing the result.
+- The function takes the number of elements (`n`), and two input linked lists (`num1` and `num2`).
+
+### `sub(int n, LinkedList num1, LinkedList num2)`
+
+- This function performs element-wise subtraction of two linked lists of floating-point numbers.
+- It returns a new linked list containing the result.
+- The function takes the number of elements (`n`), and two input linked lists (`num1` and `num2`).
+
+### `freeLinkedList(LinkedList list)`
+
+- This function frees the memory used by a linked list by traversing and deallocating all its nodes.
+- It helps prevent memory leaks.
+
+### `dot(int n, LinkedList num1, LinkedList num2)`
+
+- This function calculates the dot product of two linked lists of floating-point numbers.
+- It returns the resulting dot product value.
+- The function takes the number of elements (`n`), and two input linked lists (`num1` and `num2`).
+
+### `magnitude(int n, LinkedList num)`
+
+- This function calculates the magnitude of a linked list, which is the square root of the dot product with itself.
+- It returns the magnitude value.
+- The function takes the number of elements (`n`) and the input linked list (`num`).
+
+### `cosineSimilarity(int n, LinkedList num1, LinkedList num2)`
+
+- This function calculates the cosine similarity between two linked lists of floating-point numbers.
+- It returns the cosine similarity value.
+- The function takes the number of elements (`n`) and two input linked lists (`num1` and `num2`).
+
+### `reverseLinkedList(LinkedList head)`
+
+- This function reverses a linked list and returns the new head of the reversed list.
+- It is used to reverse the result of addition or subtraction.
+
+## Usage
+
+- The `main` function provides a command-line interface to select an operation and input linked lists.
+- Users can choose between addition, subtraction, cosine similarity, and the dot product.
+- The input linked lists are reversed to maintain the correct order during calculations.
+- The results are printed to the console.
+
 ---
+
+**Note**: This `README.md` file gives an overview of the code's structure and functionality. Detailed code comments are available in the source code for further clarification.
+
