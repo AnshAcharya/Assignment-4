@@ -149,5 +149,3 @@
 - It iterates through the list and removes nodes whose color matches the color of the next node, effectively removing consecutive duplicates.
 
 ---
-
-
