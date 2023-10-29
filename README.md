@@ -102,19 +102,19 @@
 
 ### `dot(int n, LinkedList num1, LinkedList num2)`
 
-- This function calculates the dot product of two linked lists of floating-point numbers.
+- This function calculates the dot product of two complex numbers.
 - It returns the resulting dot product value.
 - The function takes the number of elements (`n`), and two input linked lists (`num1` and `num2`).
 
 ### `magnitude(int n, LinkedList num)`
 
-- This function calculates the magnitude of a linked list, which is the square root of the dot product with itself.
+- This function calculates the magnitude of a complex number
 - It returns the magnitude value.
 - The function takes the number of elements (`n`) and the input linked list (`num`).
 
 ### `cosineSimilarity(int n, LinkedList num1, LinkedList num2)`
 
-- This function calculates the cosine similarity between two linked lists of floating-point numbers.
+- This function calculates the cosine similarity between two complex numbers of floating-point numbers.
 - It returns the cosine similarity value.
 - The function takes the number of elements (`n`) and two input linked lists (`num1` and `num2`).
 
@@ -123,14 +123,31 @@
 - This function reverses a linked list and returns the new head of the reversed list.
 - It is used to reverse the result of addition or subtraction.
 
-## Usage
+# Question 3
 
-- The `main` function provides a command-line interface to select an operation and input linked lists.
-- Users can choose between addition, subtraction, cosine similarity, and the dot product.
-- The input linked lists are reversed to maintain the correct order during calculations.
-- The results are printed to the console.
+## Structures
+
+### `Node` (Struct)
+
+- This struct represents a node in the linked list, containing a color (represented by an integer) and a pointer to the next node.
+- Members:
+  - `int color`: Integer representing the color.
+  - `struct Node *next`: Pointer to the next node in the linked list.
+
+## Functions
+
+### `append(LinkedList l, int n)`
+
+- This function appends a new color to the end of the linked list.
+- It returns the modified linked list.
+- If the linked list (`l`) is initially empty, it creates the first node. Otherwise, it traverses the list to find the last node and appends the new color as a new node.
+
+### `modified_list(LinkedList l)`
+
+- This function modifies the linked list by removing consecutive duplicate colors.
+- It returns the modified linked list.
+- It iterates through the list and removes nodes whose color matches the color of the next node, effectively removing consecutive duplicates.
 
 ---
 
-**Note**: This `README.md` file gives an overview of the code's structure and functionality. Detailed code comments are available in the source code for further clarification.
 
